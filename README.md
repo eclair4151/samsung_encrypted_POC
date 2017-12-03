@@ -23,4 +23,16 @@ Note the the following TV Models are most likely incompatible for one reason or 
 
 
 J4xxx, J50xx, J51xx, J52xx, J53xx, UNxxJ6200, J6201, J6203, J620D   
-H4xxx, H510x, H52xx, H53x3, H5403, H6003, H61x3, H6201, H6203, S9, S9C
+H4xxx, H510x, H52xx, H53x3, H5403, H6003, H61x3, H6201, H6203, S9, S9C    
+<br>
+<br>
+Troubleshooting:    
+If the script seems to pair but wont send commands put   
+print(aesLib.generate_command('KEY_VOLDOWN'))   
+in line 46 of debug.py and see what it prints out     
+<br>
+if it prints out something like this:   
+5::/com.samsung.companion:{"name":"callCommon","args":[{"Session_Id":6,"body":"[F,%,�,�,�,x,�,,�, ,2,�,�,�,�,=,�,q,�,�,�,n,�,k,N,�,�,5,�,K,�,p,�,],�,z,V,�,�,�,�,b,�,�,x,�,q,.,",�,�,�,�,�,Y,u,�,:,7,i,�,),w,P,c,m,�,�,X,�,�,�,�,,',R,b,L,R,�,,�,/,�,$,�,,H,�,�,�,�,�,,B,�,Q,�,),�,�,�,A,,},�,�,�,�, ,j,�,n,a,o,�,.,L,�,�,E,�,1,�,�,�,�,�,�,�,,W,�,�,�,?,T,�,|,�,�,{,U,�,-,�,v,�,(,�,,Q,�,�,�,h,,Q,�,�,�,,},8,�,�,�,�,",�,�,�,�,U,
+,=]"}]}  
+<br>
+You are most likley running python2. This script requires python3 as of now
