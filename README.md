@@ -10,8 +10,8 @@ Current uses a 3rd party server using the smartview DLLs to figure out the encry
 Current Requirements:
 
 * Python3
-* websocket-client-py3
-* pycrypto
+* websocket-client
+* pyCryptodome
 
 To run just run main   
 
