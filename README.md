@@ -1,3 +1,5 @@
+# This library is depricated. Please use https://github.com/sectroyer/SmartCrypto
+
 # samsung_encrypted_POC
 A Proof of concept to pair and send commands to H and J series samsung tvs that use encrypted commmunication.  
 
